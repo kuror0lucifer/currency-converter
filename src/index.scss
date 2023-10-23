@@ -23,11 +23,20 @@ body {
 }
 
 .field {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: row;
+
   width: 45%;
-  height: 40vh;
+  height: 25vh;
 
   background: white;
   border-radius: 20px;
+}
+
+.block {
+  margin-top: 50px;
 }
 
 .currency-title {
@@ -68,6 +77,22 @@ body {
 
 .list-item:last-child {
   border-radius: 0 5px 5px 0;
+}
+
+.list-item:hover {
+  opacity: 0.8;
+}
+
+.active {
+  background: #3cb371;
+  display: inline-block;
+
+  width: 70px;
+  height: 50px;
+
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
 }
 
 .inputs {
