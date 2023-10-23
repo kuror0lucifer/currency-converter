@@ -85,14 +85,6 @@ body {
 
 .active {
   background: #3cb371;
-  display: inline-block;
-
-  width: 70px;
-  height: 50px;
-
-  text-align: center;
-  line-height: 50px;
-  cursor: pointer;
 }
 
 .inputs {
@@ -112,4 +104,9 @@ body {
 
   border: 2px solid #a9a9a9;
   border-radius: 5px;
+}
+
+.input-item::placeholder {
+  font-weight: 600;
+  color: black;
 }

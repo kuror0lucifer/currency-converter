@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Field({ currency, onCangeCurrency, currencyValue }) {
+export default function Field({
+  value,
+  currency,
+  onCangeCurrency,
+  currencyValue,
+  onChangeValue,
+}) {
   return (
     <div className="block">
       <ul className="list">
@@ -19,7 +25,12 @@ export default function Field({ currency, onCangeCurrency, currencyValue }) {
         })}
       </ul>
       <div className="inputs">
-        <input type="number" className="input-item" placeholder={0} />
+        <input
+          type="number"
+          className="input-item"
+          placeholder={0}
+          onChange={(el) => onChangeValue(el.target.value)}
+        />
       </div>
     </div>
   );
